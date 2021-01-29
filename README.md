@@ -1,2 +1,2 @@
 # kcGAS
-艦これに関する"Googlespreadsheet"で使用するカスタム関数置き場です.  
+"Googlespreadsheet"で使用する, 艦これに関するカスタム関数置き場です.  
