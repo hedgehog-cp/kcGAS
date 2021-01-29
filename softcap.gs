@@ -6,12 +6,17 @@
  */
 function softcap(cap, fp) {
   const row = fp.length;
-  const col = fp[0].length;
+  try {    
+    const col = fp[0].length;
+  } catch(e) {
+    const col = 1;
+  }  
 
   for (let i = 0; i < row; i++) {
     for (let j = 0; j < col; j++) {
       if (fp[i][j] > cap) fp[i][j] = Math.sqrt(fp[i][j] - cap) + cap;
     }
   }
+  
   return fp;
 }
